@@ -1,0 +1,133 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+
+<title>Seite </title>
+<link rel="stylesheet" type="text/css" href="Stylelele.css"/>
+
+<script>
+"use strict";
+
+//Funktion für die Ausgabe der Witze am Fuß der Seite//
+function ks(){
+
+var vText=document.getElementById("Optionen").value;
+var vAusgabe="";
+    
+
+if (vText=="1") {
+vAusgabe=vAusgabe+"Geht ein Fisch in die Apotheke und sagt: Bitte ein Anti-Schuppen-Shampoo!";
+} else if(vText=="2") {
+vAusgabe=vAusgabe+" Treffen sich ein Thunfisch und ein Walfisch Sagt der Walfisch: Was sollen wir tun, Fisch? Antwortet der Thunfisch: Du hast die Wahl, Fisch. ";
+}
+else if(vText=="3") {
+vAusgabe=vAusgabe+"Haben Sie die Fische, die Sie hier im Eimer haben, alle allein gefangen? Nein, ich hatte einen Wurm, der mir dabei half.";
+}
+else if(vText=="4") {
+vAusgabe=vAusgabe+" Kommt eine Frau zum Angler und fragt: Und, beißen die Fische?  Der Angler antwortet: Nein, sie können sie ruhig streicheln";
+}
+else{}
+document.getElementById("idAusgabe").innerHTML = vAusgabe;
+
+
+}
+
+
+</script>
+
+ 
+</head>
+<body>
+<!-- Gesamt über alle tags für eine Übergreifende Formatierung -->
+<div id="Gesamt">
+<!--Überschrift der Seite -->    
+<div class="kopf">
+Die Welt der Fische
+</div>
+<!-- Die erste Textbox -->
+<div id="Box"> 
+
+<h1 class="Überschrift"> Was ist ein Fisch? </h1>
+Der Fisch ist eine majestätische Kreatur, der seine Existenz seit Jahrhunderten behaupten kann.
+Dies liegt unter anderem an seiner Anpassungsfähigkeit, der Fisch kann im Wasser, Meer, See und Ozean überleben.
+Zudem können sie selbst unter Extrembedingungen leben wie in einem Aquarium, in deiner Badewanne und selbst in der Kanalisation.<p class="Geheim">ja ist das denn zu fassen?</p>
+     
+<h1> Wie viele Fischarten gibt es? </h1>
+Diese Frage ist nicht leicht zu beantworten, da Fische trotz des Faktes, dass sie seit Millionen Jahren das Meer bevölkern, sich dennoch dagegen entschieden haben, ein Einwohnermeldeamt zu gründen.
+Experten schätzen die Zahl der Fische auf circa 30.000 Arten <br> <br>
+</div>
+
+<!-- Die zweite Textbox -->
+<div id="Box2"> 
+<h1>Wissenswertes</h1>
+<li>Der Hammerhai hat seinen Namen daher, dass er während der Steinzeit von Höhlenmenschen als Hammer verwendet wurde</li>
+<li>Als Eisen noch nicht weit verbreitet war, führten Menschen ihre Fechtduelle mit Schwertfischen aus</li> 
+<li>Wenn man das Wort Fisch rückwärts liest, erhält man hcsiF, was keinen Sinn ergibt, wenn man dies jedoch rückwärts liest, erhält man Fisch, was wiederum Sinn ergibt </li>
+<li> Laut einigen Fischen gibt es mehr Flugzeuge im Meer als Boote im Himmel </li>
+<li>Neuste Forschungsergebnisse widerlegen den Irrtum das Fischstäbchen zu 50 % aus Fisch und zu 50 % aus Stäbchen bestehen <p class="Geheim"> die Aufteilung ist 30% zu 70% </p> </li>
+
+</div>
+
+<!-- Die Bilder neben der 2 Textbox-->
+<div id="bilderbox">
+<img src="Bilder/Hammerhai.jpg">  <br> 
+<img src="Bilder/schwertfisch.jpg">   
+</div>
+
+<!-- Die 3 Textbox -->
+<div id="Box3"> 
+
+<h1 class="Überschrift"> Der Größte Fisch der Welt </h1>
+Der größte Fisch der Welt ist das Walhai-Weichen mit durchschnittlich 14,5 Metern, wohingegen die Männchen nur acht bis nein Meter erreichen.
+Das größte Meerestier ist jedoch ein Säugetier und kein Fisch. Der Blauwal mit einer Länge von 33 Metern sichert sich sogar den Platz als größtes Tier der Welt.
+
+<h1 class="Überschrift"> Der außergewöhnlichste Fisch </h1>
+
+Der Blobfisch lebt in einer Tiefe von 600 bis 2.800 m. Dort ist stockfinster und der Druck ist so groß, dass ihn kein Mensch überleben würde.
+Der Körper der Blobfische besteht aus einer glibberigen Masse, um dem besonders hohen Druck in der Tiefsee standhalten zu können. 
+Aber wenn er von Tiefseefischern gefangen wird, holen sie ihn von ganz unten nach ganz nach oben. Je näher er der Wasseroberfläche kommt, desto geringer ist der Druck, der auf seinen Körper lastet. Dadurch bläst er sich zu einem unförmigen Ballon auf. Überleben kann er das nicht.
+</div>
+
+<!-- Die Bilder neben der 3 Textbox -->
+<div id="bilderbox2">
+<img src="Bilder/warnung.jpg" onmouseover="this.src='Bilder/blobfisch1.jpg'" onmouseout="this.src='Bilder/blobfisch2.jpg'" >
+</div>
+
+<!-- Seestern der bei hover in gif wechselt -->
+<div class="Tanz" >
+<h2>Lass den Seestern tanzen</h2>  <br>
+<img src="Bilder/Seestern.jpg" onmouseover="this.src='Bilder/Patrick.gif'" >    
+</div>
+
+<!-- Auswahl der Witze -->
+<div id="Auswahl">
+
+<select id="Optionen">
+<option value="1"  selected> Fisch Witz des Tages </option>
+<option value="2">Fisch Witz der Woche </option>
+<option value="3">Fisch Witz des Monats </option>
+<option value="4"> Beliebtester Fisch Witz  </option>
+</select> 
+    
+    
+      
+
+
+<button onClick="ks();" style="font-size: 20px;" >Suche</button > 
+</div>
+
+
+<!-- Ausgabe der Witze -->
+<div id="infos">
+    
+        
+<div id="idAusgabe"></div>
+</div>
+    
+ 
+
+</div>
+</body>
+</html>

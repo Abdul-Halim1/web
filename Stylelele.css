@@ -1,0 +1,134 @@
+body {    
+overflow:auto;
+line-height: 1.3;
+font-family: sans-serif;
+font-size: 100%;
+background-image: url("Bilder/wasser.gif");
+background-position-x: repeat;
+}
+
+/* Formatierung gesamte Seite */
+#Gesamt {
+overflow: hidden;
+margin: auto;
+max-width: 1000px;
+font-size: 18px;	 
+}
+
+/* Überschrift der Seite*/
+.kopf {
+color: white; 
+padding: 7%;
+text-align: center;
+font-size: 52px;
+border-radius: 15px 15px 15px 15px;
+height: 50px;
+background-color: teal;
+}
+
+
+
+/* Textüberschriften*/
+.Überschrift{
+text-align: center;}
+
+/* 1 Textbox */
+#Box{
+margin-top: 20px;
+background-color: turquoise;
+border-radius: 15px 15px 15px 15px;
+text-align: center;
+}
+
+/* 2 Textbox */
+#Box2{
+margin-top: 30px;
+background-color: turquoise;
+border-radius: 15px 15px 15px 15px;
+text-align: center;
+float: left;
+max-width: 600px;
+}
+	
+
+/* 3 Textbox */
+#Box3{
+	margin-top: 30px;
+	background-color: turquoise;
+	border-radius: 15px 15px 15px 15px;
+	text-align: center;
+	float: right;
+	max-width: 550px;
+	}
+
+
+/* Bilder Formatieren */
+img{
+width: 350px;
+height: 200px;	
+}
+
+
+/*  Bilder der 1Textbox anordnen*/
+#bilderbox{
+float: left;
+margin-left: 20px;
+margin-top: 30px;
+}
+	
+
+/*  Bilder der 2Textbox anordnen*/
+#bilderbox2{
+float: left;
+margin-left: 20px;
+margin-top: 180px;
+}
+
+
+/* Auswahl position */
+#Auswahl{
+padding-top: 30px;
+text-align: center;
+margin-top: 12px;
+clear: both;
+}
+
+/* Auswahl optionen*/
+#Optionen{
+text-align: center;
+width: 400px;
+font-size: 25px;
+border-radius: 15px 15px 15px 15px;
+}
+
+
+/* Ausgabe der Auswahl option*/
+#infos{
+margin-top: 30px;
+color: white;
+text-align: center;
+border-radius: 15px 15px 15px 15px;
+font-weight: bold;
+background-image: url("Bilder/fisch.gif");
+margin-bottom: 70px;
+max-width: 300px;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 70px;
+
+}
+
+
+/*um geheime Nachrichten zu verstecken ;) */
+.Geheim{
+color: turquoise;
+}
+
+
+/*Position des Bild/Gifs*/
+.Tanz{	
+padding-top: 30px;
+text-align: center;
+clear: both;
+align-self: center;
+}
